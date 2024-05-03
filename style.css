@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.8vh;
+}
+
+ul {
+    background: none;
+    list-style: none;
+    
+}
+
+h1 {
+    background: none;
+    font-size: 5vh;
+}
+
+li {
+    background: none;
+    font-size: 3vh;
+}
+
+img {
+    background: none;
+}
+
+p {
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 3vh;
+    margin: 0 2vw;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#left {
+    width: 20vw;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#start {
+    background-color: rgb(70, 65, 65, 0.3);
+    width: 97%;
+    height: 14%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#bib {
+    background-color:rgb(70, 65, 65, 0.3);
+    width: 97%;
+    height: 84%;
+    border-radius: 10px;
+
+    padding-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#bibmenu {
+    height: 5vh;
+    width: 100%;
+
+    background: none;
+
+    display: flex;
+    align-items: center;
+}
+
+#bibtags {
+    height: 5vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.tag {
+    background-color: rgba(119, 113, 113, 0.3);
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 5px;
+
+    font-size: 1.5vh;
+}
+
+#bibsearch{
+    height: 5vh;
+    width: 100%;
+
+    background:none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bibsearch img {
+    height: 2vh;
+}
+
+#bibsearch p{
+    font-size: 1.5vh;
+}
+
+#bibplaylist{
+    height: 100%;
+    width: 100%;
+    background: none;
+}
+
+.playlist {
+    height: 5vh;
+
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+    background: none;
+}
+
+.playlist div {
+    background: none;
+}
+
+.playlist p {
+    padding-left: 10px;
+    font-size: 1.5vh;
+    background: none;
+}
+
+.playlist img {
+    height: 100%;
+    border-radius: 5px;
+    background: none;
+}
+
+.grey {
+    color: rgb(169, 168, 168);
+}
+
+#middle {
+    width: 54vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#game {
+    background-color: rgb(70, 65, 65, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    height: 99%;
+}
+
+#gameheader{
+    background-color: rgb(70, 65, 65, 0.6);
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px 10px;
+}
+
+#headertop{
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+}
+
+#headertop img {
+    background: none;
+
+}
+
+#headertop img:hover{
+    cursor: pointer;
+}
+
+#headertop div {
+    background: none;
+}
+
+#headerbottom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    background: none;
+}
+
+#artistfont {
+    font-size: 10vh;
+    font-weight: 600;
+}
+
+#quizfield {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 60vh;
+
+    background: none;
+}
+
+#quizfield div {
+    background: none;
+}
+
+
+#right {
+
+    width: 25vw;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player {
+    background-color: rgb(70, 65, 65, 0.3);
+    height: 99%;
+    width: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#player div {
+    background-color: rgba(81, 75, 75, 0.3);
+    width: 98%;
+    height: 22%;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#player div *{
+    margin: 0 1vw;
+}
+
+#player div img {
+    height: 90%;
+}
+
+#bottom {
+    height: 10vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#playbar img {
+    height: 7vh;
+}
+
+#active {
+    background-color: rgba(28, 180, 14, 0.466) !important;
+}

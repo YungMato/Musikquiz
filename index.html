@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="left">
+            <div id="start">
+                <p><img src="/img/Home.png" class="icon">Start </p>
+                <p><img src="/img/Lupe.png" class="icon">Suchen</p>
+            </div>
+            <div id="bib">
+                <div id="bibmenu">
+                    <p>
+                        Bibliothek
+                    </p>
+                </div>
+                <div id="bibtags">
+                    <p class="tag">Playlists</p>
+                    <p class="tag">Künstler</p>
+                    <p class="tag">Alben</p>
+                    <p class="tag">Podcasts</p>
+                </div>
+                <div id="bibsearch">
+                    <img src="img/Lupe.png" alt="">
+                    <p>Zuletzt abgespielt</p>
+                </div>
+                <div id="bibplaylist">
+                    <div class="playlist">
+                        <img src="img/playbild.png">
+                        <div>
+                            <p>Lieblingssongs</p>
+                            <p class="grey">Playlist - 3.887 Songs</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild0.png">
+                        <div>
+                            <p>Dat Adam crew</p>
+                            <p class="grey">Gespeicherte und heruntergeladene Folgen</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild1.png">
+                        <div>
+                            <p>Dat Adam crew</p>
+                            <p class="grey">Playlist - Max Ellermann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild2.png">
+                        <div>
+                            <p>American Dream</p>
+                            <p class="grey">Playlist - Max Ellermann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild3.png">
+                        <div>
+                            <p>Fest & Flauschig</p>
+                            <p class="grey">Podcast - Jan Böhmermann & Olli Schulz</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild4.png">
+                        <div>
+                            <p>Your Love Is King (Deluxe)</p>
+                            <p class="grey">Album - Trettmann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild5.png">
+                        <div>
+                            <p>Sommer '23</p>
+                            <p class="grey">Playlist - Max Ellermann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild6.png">
+                        <div>
+                            <p>Halloween Party - Warmup</p>
+                            <p class="grey">Playlist - Max Ellermann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild7.png">
+                        <div>
+                            <p>Diese Andere</p>
+                            <p class="grey">Playlist - Max Ellermann</p>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/playbild8.png">
+                        <div>
+                            <p>Zwei Vermengte</p>
+                            <p class="grey">Podcast - Filow & Zarbex</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="game">
+                <div id="gameheader">
+                    <div id="headertop">
+                        <div id="headercontrol">
+                            <img src="img/left.png" class="icon" onclick="nextSong()">
+                            <img src="img/right.png" class="icon" onclick="wrongAnswer()">
+                        </div>
+                        <img src="img/spotify.png" class="icon" onclick="rightAnswer()">
+                    </div>
+                    <div id="headerbottom">
+                        <p id="artistfont" onclick="revealArtist()">Unknown Artist</p>
+                        <p>69.420 monatliche Hörer*innen</p>
+                    </div>
+                </div>
+
+        <!-- PLAYFIELD -->
+                <div id="quizfield">
+                    <ul id="tracks">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PLAYER STANDINGS-->
+        <div id="right">
+            <div id="player">
+                <div onclick="setActive(0)">
+                    <img src="img/player1.png" alt="">
+                    <p id="p1">Player1</p>
+                    <p class="life">12 </p><p>Punkte</p>
+                </div>
+                <div onclick="setActive(1)">
+                    <img src="img/player2.png" alt="">
+                    <p id="p2">Player2</p>
+                    <p class="life">12 </p><p>Punkte</p>
+                </div>
+                <div onclick="setActive(2)">
+                    <img src="img/player3.png" alt="">
+                    <p id="p3">Player3</p>
+                    <p class="life">12 </p><p>Punkte</p>
+                </div>
+                <div onclick="setActive(3)">
+                    <img src="img/player4.png" alt="">
+                    <p id="p4">Player4</p>
+                    <p class="life">12 </p><p>Punkte</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div></div>
+        <div id="playbar">
+            <img src="/img/bar.png" alt="">
+        </div>
+        <div></div>
+    </div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
